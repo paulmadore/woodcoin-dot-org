@@ -1,0 +1,168 @@
+/* Except where illegal, all website code is original by www.phm.link and
+licensed under Mozilla Public License 2.0. */
+
+html
+{ height: 80%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+body
+{ font: "Georgia";
+  font-size: 14pt;
+  color: #232623;
+  background: #d4e5b8;
+  }
+
+h1 {
+    font: serif, Georgia, fantasy;
+    color: #608360;
+}
+h2 {font-size: 22px;
+font: Times New Roman;
+margin: 15px;}
+
+h1.fsth, h2.fsth {text-align: center;}
+
+h3.faq {
+    font-size: 19px;
+    font: monospace;
+    margin: 22px;
+}
+
+p {
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+blockquote {
+    font-size: 10pt;
+    line-height: 9.5pt;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    text-align: justify;
+    color:#232623;
+}
+
+a:link {
+    color: #232623;
+    text-decoration: none;
+    } a:visited {
+    color: #232623;
+    text-decoration: none;
+    } a:hover {color: #608360;} a:active {
+    color: #AD9134;}
+
+h2 a:link  {
+    color: #728188;
+    text-decoration: none;
+    } h2 a:visited {
+    color: #728188;
+    text-decoration: none;
+    } h2 a:hover {color: #608360;} h2 a:active {
+    color: #AD9134;}    
+
+#forest {
+    width: 57%;
+    margin-left: 5%;
+   height: !important 95%;
+  float: left;
+  word-wrap: break-word;
+ }
+ #forest ul {
+    width: 450px;
+    padding: 3%;
+    margin-left: 18%;
+    color: #000;
+    font-family: monospace;
+    
+ }
+
+#overhead {
+    
+    padding-top: 15%;
+    margin-left: 69%;
+    font-size: 18px;
+    font-family: "Symbola," "Georgia";
+    align: right;
+    width: 25%;
+    height: 250px;
+   float: !important right;
+          
+}
+#overhead img {vertical-align: text-top;}
+#overhead span {font-family: monospace;
+ font-size: 75%;
+ }
+
+header {margin: 15px;}
+
+header h1 {font: 900 "Merriweather", sans-serif;
+font-size: 52pt;
+color: #AD9134;
+}
+header h2 { color: #7E843F;
+
+}
+
+footer {
+    vertical-align: bottom;
+    margin-bottom: 15px;
+    margin-top: 45px;
+    font-size: small;
+    font-family: monospace;
+    }
+    
+/* Classes */
+
+span.caption {font-size: 9pt;
+        line-height: 4pt;
+        max-height: 7pt;
+        text-align: left;
+        color: #000;
+}
+span.captfaq {font-size: 12pt;
+        line-height: 12pt;
+        max-height: 12pt;
+        text-align: left;
+        color: #000;
+}
+span.capspec {font-size: 11.5pt;
+        line-height: 12pt;
+        max-height: 12pt;
+        text-align: left;
+        color: #000;
+        margin: 5px;
+        padding: 5px;
+}
+
+ol.spec li {
+    margin-bottom: 15px;
+}
+
+span.contr {font-size: 6pt;}
+
+img.swag {margin: 5%;}
+
+.oh {background-image: url("../img/bg/overhead-bg.png");
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-color: transparent;
+   }
+.fst {background-image: url("../img/bg/forest-bg.png");
+   background-position: top left;
+   background-repeat: no-repeat;
+   background-color: transparent;
+   
+    }
+    
+
+
+
+
+
+
+
+
+

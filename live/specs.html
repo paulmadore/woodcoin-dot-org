@@ -1,0 +1,87 @@
+<!-- Except where illegal, all website code is original (c) 2015 www.phm.link and
+licensed under Mozilla Public License 2.0. Certain parts and files are not original nor sublicensed here.
+They are noted as such. More on the license http://mozilla.org/MPL - LICENSE DOES NOT APPLY WHERE IT CONFLICTS. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Woodcoin: Specifications</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="woodcoin, cryptocurrency, bitcoin, funkenstein, moonpunter" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+   
+   <div id="forest" class="fst"><div style="height: 45px;"></div>
+    <h1 class="fsth">Stuff That Makes Us Cooler</h1>
+    <h2 class="fsth"><a href="faq.html">FAQ</a> &#8486; <a href="specs.html"><em>Specifications</em></a> &#8486; <a href="woodcoin.pdf">Whitepaper</a> &#8486; <a href="http://logaddress.org">Paper Notes</a></h2>
+    <h2>Technical Details</h2>
+    <p>Woodcoin is a public cryptocurrency like Bitcoin.  There are three major changes, with design considerations listed here:</p>
+<ol class="spec" style="list-style-type: decimal;"><li> Proof of Work algorithm:  Double Skein<br/><br/>
+<span class="capspec">This is the first consensus network built solely with the <a href="https://en.wikipedia.org/wiki/Skein_%28hash_function%29" target="_blank">skein hash function</a>.  Read more about Skein <a href="http://www.skein-hash.info/about" target="_blank">here</a>.  We hope to encourage further use and testing of the Skein family with this coin.</span></li>
+
+<li>Elliptic Curve for Digital Signatures: X9_62_prime256v1.<br/><br/>
+<span class="capspec">To sign transactions and create public and private addresses we use the elliptic curve digital signature algorithm ECDSA just like bitcoin.  However we use a different curve as a basis to do so.  This curve is perhaps the most used in the financial industry.  Some people think it is better.  We like to encourage cryptographic diversity.</span></li>
+
+<li>Logarithmic Coin Release<br/><br/>
+Woodcoin is the first coin to use a logarithmic coin release. The woodcutting reward is continually adjusted according to the harmonic series. From /src/main.cpp:</li>
+<blockquote>
+int64 static GetBlockValue(int nHeight, int64 nFees) {<br/>
+int64 nSubsidy = 1000000 * COIN;<br/>
+if (nHeight<100) return 1*COIN;<br/>
+else return nSubsidy/nHeight + nFees;<br/>
+}<br/></blockquote>
+
+<p>This leads to a total money supply <span class="capspec">S</span> which increases logarithmically in block height <span class="capspec">n</span>:</p>
+<blockquote>
+S = 1000000* ( log n + gamma )   –  forest<br/>
+log = natural logarithm<br/>
+gamma = euler-mascheroni constant<br/>
+forest  =  5187377.51763962 </blockquote>
+
+<p>Unlike Bitcoin and most other cryptocurrencies, the reward will never drop to zero and will smoothly decrease.  (Techinically it is scheduled to reach zero when the reward drops to under 1 satoshi but that isn’t for about 350 million years)  Here is a plot of the woodcutting reward per day, compared to bitcoin, for the next 50 years or so:</p>
+
+<div align="center"><img src="img/etc/woodcoin-v-bitcoin-distribution.png" height="270" width="450" alt="Here is a plot of the Daily rewards comparing BTC released per day to LOG released per day for the next  45 years.  For more on the economics of a logarithmically increasing money supply read the whitepaper."><br/></div>
+
+<h3>Other technical details of Woodcoin:</h3>
+
+<ul><li>Port: 8338</li>
+<li>Testnet: 18338</li>
+<li>RPC: 9338</li>
+<li>RPC Testnet: 19338</li>
+<li>Speed: 2 min. blocks</li>
+<li>Difficulty: 1 hr. adjust</li></ul>
+
+<h3>Heritage:</h3>
+
+<p>Notable continued coin heritage: <a href="http://en.bitcoin.it" target="_blank">Bitcoin</a>, <a href="https://github.com/litecoin-project/litecoin" target="_blank">Litecoin</a>, <a href="http://www.quarkcoins.com/" target="_blank">Quarkcoin</a>.</p>
+
+<p>Depricated heritage (release version): <a href="http://www.cthulhu.tk/" target="_blank">Cthulu&rsquo;s Offerings</a>, Foocoin/SmallChange.</p>
+   
+    <footer>
+  Many icons designed by <a href="http://freepik.com" target="_blank">Freepik</a>. 
+ </footer> 
+   
+   </div>
+  <div id="overhead">
+  <div align="center"><a href="index.html"><img src="img/etc/forest-overhead.png" height="75px" width="75px" style="margin-right: 75px;"></a></div>
+  <ul style="list-style-type: none;" class="oh">
+  <li><img src="img/icns/pools.png"> Pools <span>[<a href="http://wood.suprnova.cc/" target="_blank">1</a>][<a href="http://coinspool.cu.cc/info_woodcoin" target="_blank">2</a>]&nbsp;</span> <br/></li>
+  <li><img src="img/icns/exchanges.png"> Exchanges <span>[<a href="https://c-cex.com/?p=log-btc" target="_blank">1</a>]&nbsp;</span> </br></li>
+  <li><img src="img/icns/ledgers.png"> Public Ledger <span>[<a href="http://altcoinguys.blockexperts.com/log" target="_blank">1</a>][<a href="http://www.multifaucet.tk/index.php?blockexplorer=LOG" target="_blank">2</a>][<a href="http://explorer.woodcoin.org/" target="_blank">3</a>]&nbsp;</span><br/></li>
+  <li><img src="img/icns/faucets.png"> Free Coin <span>[<a href="http://www.faucetrotator.uni.me/woodcoin/" target="_blank">1</a>][<a href="http://www.multifaucet.tk/index.php?faucet=LOG" target="_blank">2</a>]&nbsp;</span><br/></li>
+  <li><img src="img/icns/bounties.png"> Earn Coin <span>[<a href="bounties.html">Bounties</a>]</span></li>
+  <li><img src="img/icns/community.png"> Forums <span>[<a href="http://woodcutting.club" target="_blank">1</a>][<a href="https://bitcointalk.org/index.php?topic=831003.0" target="_blank">2</a>]</span><br/></li>
+  <li><img src="img/icns/downloads.png"> Downloads <span>[<a href="official.html">Official</a>] [<a href="unofficial.html">Other</a>]</span></li>
+  <li><img src="img/icns/code.png"> Code <span>[<a href="https://github.com/funkshelper/woodcoin/" target="_blank">Github</a>] [Fosshub]</span></li>
+  <li><img src="img/icns/media.png"> Media <span>[<a href="http://frass.woodcoin.org" target="_blank">FRASS</a>] </span></li>
+  <li><img src="img/icns/etc.png"> Et Cetera <span>[<a href="extras.html">Swag</a>] [<a href="logic.phm.html">OpenTTD Map</a>]</span></li>
+  </ul>
+
+  </div>
+ </div>
+
+        
+</body>
+</html>
+ 
