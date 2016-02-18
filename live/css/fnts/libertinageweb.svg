@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata></metadata>
 <defs>
-<font id="libertinagefull" horiz-adv-x="899" >
+<font id="libertinage" horiz-adv-x="899" >
 <font-face units-per-em="2048" ascent="1638" descent="-410" />
 <missing-glyph horiz-adv-x="512" />
 <glyph unicode="&#x2e;&#x2e;&#x2e;" horiz-adv-x="1534" d="M116 84q0 45 32 77t77 32t77 -32t32 -77t-32 -77t-77 -32t-77 32t-32 77zM658 84q0 45 32 77t77 32t77 -32t32 -77t-32 -77t-77 -32t-77 32t-32 77zM1200 84q0 45 32 77t77 32t77 -32t32 -77t-32 -77t-77 -32t-77 32t-32 77z" />

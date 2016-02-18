@@ -10,7 +10,6 @@ licensed under Mozilla Public License 2.0. Libertinage font licensed under OFL. 
          url('fnts/libertinageweb.svg#libertinage') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -29,18 +28,18 @@ body
   }
 
 h1 {
-    font: serif, Georgia, fantasy;
+    font: "libertinage";
     color: #608360;
 }
 h2 {font-size: 22px;
-font: Times New Roman;
+font: "libertinage";
 margin: 15px;}
 
 h1.fsth, h2.fsth {text-align: center;}
 
 h3.faq {
     font-size: 19px;
-    font: monospace;
+    font: "libertinage";
     margin: 22px;
 }
 
@@ -85,10 +84,10 @@ h2 a:link  {
  }
  #forest ul {
     width: 450px;
-    padding: 3%;
+    
     margin-left: 18%;
     color: #000;
-    font-family: monospace;
+    font-family: "libertinage";
     
  }
 
@@ -97,7 +96,7 @@ h2 a:link  {
     padding-top: 15%;
     margin-left: 69%;
     font-size: 18px;
-    font-family: "Symbola," "Georgia";
+    font-family: "libertinage";
     align: right;
     width: 25%;
     height: 250px;
@@ -105,13 +104,14 @@ h2 a:link  {
           
 }
 #overhead img {vertical-align: text-top;}
-#overhead span {font-family: monospace;
+#overhead span {font-family: "libertinage";
  font-size: 75%;
  }
 
 header {margin: 15px;}
 
-header h1 {font: 900 "Merriweather", sans-serif;
+header h1 {
+font: 900 "libertinage";
 font-size: 52pt;
 color: #AD9134;
 }
@@ -124,7 +124,7 @@ footer {
     margin-bottom: 15px;
     margin-top: 45px;
     font-size: small;
-    font-family: monospace;
+    font-family: "libertinage";
     }
     
 /* Classes */
@@ -140,6 +140,7 @@ span.captfaq {font-size: 12pt;
         max-height: 12pt;
         text-align: left;
         color: #000;
+        font-family: "libertinage";
 }
 span.capspec {font-size: 11.5pt;
         line-height: 12pt;
