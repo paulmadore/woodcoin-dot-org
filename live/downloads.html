@@ -1,0 +1,42 @@
+{% extends "_base.html" %}
+{% block content %}
+<div id="forest" class="fst"><div style="height: 45px;"></div>
+  <h1 class="fsth">&amp; Wood Enough For All</h1>
+  <h2 class="fsth"><a href="{{ url_for('main.faq') }}">FAQ</a> &#8486; <a href="{{ url_for('main.specs') }}">Specifications</a> &#8486; <a href="{{ url_for('main.woodcoin') }}">Whitepaper</a> &#8486; <a href="http://logaddress.org/index.html">Paper Notes</a></h2>
+  
+  <p>The following are Woodcoin wallets, nodes, and tools tested and built by the woodcoin.org team.  Search for them or find them in the github repo below</p>
+  <ul>
+  <li><a href="https://github.com/funkshelper/woodcoin/">Woodcoin-QT</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Original graphical wallet.</em></span></li>
+  <li><a href="https://github.com/funkshelper/woodcoin/">woodcoind</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Original headless client for servers and non-graphical users.</em></span></li>
+  <li><a href="https://github.com/funkshelper/fo-realz-woodcoin/">fo-realz-woodcoin</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Satoshi 0.5.3 based command line full node and reference client.</em></span></li>
+  <li><a href="https://github.com/funkshelper/woodcoin-minimal/">woodcoin-minimal</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>A modern command line client with minimal LOC</em></span></li>
+  <li><a href="https://github.com/funkshelper/vanitygen/">Vanitygen for Woodcoin</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Allows advanced dwarves to create custom log addresses for daily use.</em></span></li>
+  <li><a href="https://github.com/tpruvot/ccminer/">GPU woodcutter (nvidia)</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>GPU double skein miner.</em></span></li>
+  <li><a href="https://github.com/OhGodACompany/OhGodSomeKernels">GPU woodcutter (amd)</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Double skein miner for AMD GPUs(under development)</em></span></li>
+  <li><a href="https://github.com/funkshelper/logaddress.org/">Offline Browser paper wallet tool</a></li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Essential tool for paper wallets and address manipulation</em></span></li>
+  </ul>
+  <p>
+ <p> WINDOWS and MAC users:  
+ <p> Proprietary software systems are almost always a bad idea. 
+ <p> They are less reliable, harder to use, and they will not continue to be supported as the controlling interest requires upgrades or disappears. 
+ <p> They also cannot possibly be secure.  
+ <p> 
+ <p> However, it is understood that some people still wish to have binaries for these systems.  Here they are:
+ <p>
+ <a href="http://woodcoin.org/static/woodcoin-qt.dmg"><img src="{{ url_for('static', filename='img/icns/macicon.png') }}">  (woodcoin-qt.dmg)</a> 
+ <p>
+ <a href="http://woodcoin.org/static/woodcoin-qt.exe"> <img src="{{ url_for('static', filename='img/icns/windowsicon.png') }}">   (woodcoin-qt.exe)</a>
+  <footer>
+    
+  </footer>
+</div> 
+   
+{% endblock %} 
